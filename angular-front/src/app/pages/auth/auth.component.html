@@ -1,0 +1,15 @@
+<section class="login-container">
+    <div class="login-page">
+      <div class="form">
+        <form class="login-form"  [formGroup]="formLogin">
+          <input formControlName="user" type="text" placeholder="username"/>
+          <input formControlName="password" type="password" placeholder="password" (keypress)="eventEnter($event)"/>
+          <h4 class="message-text" *ngIf="HidemessageError">
+            user/password invalid
+          </h4>
+          <button (click)="login()">login</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  

@@ -1,0 +1,55 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    .header-container {
+      background-color: lightblue;
+      height: 300px;
+      width: 100%;
+      background: url("https://www.mobilelive.ca/wp-content/uploads/2020/11/Angular_Banner.png")
+        center no-repeat;
+      background-size: cover;
+    }
+  
+    .nav-container {
+      background-color: #30475e;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      align-items: center;
+      padding: 0.5em;
+      box-sizing: border-box;
+  
+      .nav-item {
+        color: #fff;
+        margin-right: 5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all ease-out 0.1s;
+        &:hover {
+          transform: scale(1.1);
+          background-color: rgb(59, 91, 102);
+          padding: 0.3em;
+          box-sizing: border-box;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+  
+        .logout-icon {
+          font-size: 20px;
+          margin: 0 0.5em;
+        }
+      }
+    }
+}  
+
+.container{
+    width: 100%;
+    padding: 10px 100px;
+    box-sizing: border-box;
+  }

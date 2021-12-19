@@ -1,0 +1,99 @@
+// TABLE
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td,
+th {
+  width: 25%;
+}
+
+table tr td {
+  width: 1% !important;
+  white-space: nowrap !important;
+}
+
+:host ::ng-deep .icon {
+  width: 10px !important;
+  padding-right: 1em;
+}
+
+:host ::ng-deep .mat-form-field-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+:host ::ng-deep .mat-select-trigger {
+  margin-bottom: 1em;
+}
+
+
+  .icon-td {
+    font-size: 20px;
+    padding: 0 .3em;
+    cursor: pointer;
+  }
+  
+  .delete {
+    margin-right: .5em;
+    &:hover{
+      color: #F05454;
+    }
+  }
+
+  .edit {
+    &:hover{
+      color: #516BEB;
+    }
+  }
+
+  .home-container {
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .table-container{
+      position: relative;
+      width: 70%;
+      .components-outside{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1em;
+        .mat-form-container{
+          width: 80%;
+          max-width: 400px;
+        }
+        .add-button{
+          background-color: #377bc9;
+          color: #fff;
+          outline: none;
+          border: none;
+          border-radius: 2px;
+          width: 100px;
+          padding: 1em;
+          box-sizing: border-box;
+          &:hover{
+            background-color: #2663b3;
+            cursor: pointer;
+          }
+        }
+    
+      }
+      
+     
+      .img-hero {
+        width: 50px;
+        height: 50px;
+      }
+
+    }
+
+  }

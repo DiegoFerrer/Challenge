@@ -1,0 +1,35 @@
+<section class="forms-container">
+    <form class="hero-form"  [formGroup]="formHero" #form>
+
+        <input 
+            formControlName="name" 
+            type="text" 
+            placeholder="Nombre"
+            [ngClass]="{'is-valid': isControlValid('name'),'is-invalid':isControlInvalid('name')}"
+        />
+        <input 
+            formControlName="speed" 
+            type="text" 
+            placeholder="Velocidad" 
+            onKeyPress="if(this.value.length==3) return false;"
+            (keypress)="isNumberKey($event)"
+            [ngClass]="{'is-valid': isControlValid('speed'),'is-invalid':isControlInvalid('speed')}"
+            />
+        <input 
+          formControlName="power" 
+          type="text" 
+          placeholder="Poder"
+          onKeyPress="if(this.value.length==3) return false;"
+          (keypress)="isNumberKey($event)"
+          [ngClass]="{'is-valid': isControlValid('power'),'is-invalid':isControlInvalid('power')}"
+          />
+        <input 
+          formControlName="urlImage" 
+          type="text" 
+          placeholder="Url imagen"
+          />
+
+        <button *ngIf="!hero" class="add-button" (click)="createHero()" [disabled]="!formHero.valid">Añadir</button>
+        <button *ngIf="hero"class="add-button" (click)="createHero()" [disabled]="!formHero.valid">Guardar</button>
+      </form>
+</section>

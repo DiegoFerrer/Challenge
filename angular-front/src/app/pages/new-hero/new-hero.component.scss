@@ -1,0 +1,52 @@
+.forms-container {
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .hero-form {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    background-color: rgb(241, 236, 236);
+
+    .add-button {
+      background-color: #377bc9;
+      color: #fff;
+      outline: none;
+      border: none;
+      border-radius: 2px;
+      padding: 1em;
+      box-sizing: border-box;
+      &:hover {
+        background-color: #2663b3;
+        cursor: pointer;
+      }
+      &[disabled] {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    }
+
+    input {
+      height: 40px;
+      border: 1px solid #e5e5e5;
+      background: #f7f7f7;
+      padding: 0 10px;
+      border-radius: 2px;
+    }
+
+    // Validation
+    .is-valid {
+        border-color: #1BC5BD;
+      
+    }
+
+    .is-invalid {
+        border-color: #F64E60;
+      
+    }
+  }
+}

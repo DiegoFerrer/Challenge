@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  api:
+    container_name: apiChallenge
+    restart: always
+    build: ./challenge-api/.
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+  web:
+    container_name: webChallenge
+    build: ./angular-front/.
+    ports:
+      - "4200:4200"
+  mongo:
+    container_name: mongoDbChallenge
+    image: mongo
+    ports:
+      - "27018:27017"
+    

@@ -1,0 +1,7 @@
+<section class="spinner-container" *ngIf="activatedManual">
+  <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</section>
+<section class="spinner-container" *ngIf="inProgress | async" mode="indeterminate">
+  <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</section>
+
