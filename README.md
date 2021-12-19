@@ -1,4 +1,4 @@
-# Challenge-Reign
+# Challenge
 ## Download repository
 
 ```bash
